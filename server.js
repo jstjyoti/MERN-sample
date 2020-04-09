@@ -1,5 +1,6 @@
 import config from './config';
 import express from 'express';
+import fs from 'fs';
 const server = express();
 
 //route
@@ -9,11 +10,10 @@ server.get('/', (req, res) => {
 });
 server.get('/about.html', (req, res) => {
   //handler similar to http server module
-  res.send('in about page'); // to send string send method
-});
-server.get('/contact.html', (req, res) => {
-  //handler similar to http server module
-  res.send('in contact page'); // to send string send method
+  // res.send('in about page'); // to send string send method
+  fs.readFile('./about.html', (err, data) => {
+    res.send(data.toString());
+  });
 });
 
 server.listen(config.port, () => {
