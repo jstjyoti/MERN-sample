@@ -1,0 +1,46 @@
+{
+  "name": "learn-full-stack",
+  "version": "1.0.0",
+  "description": "It is a sample repository for learning MERN stack development",
+  "main": "index.js",
+  "scripts": {
+    "start":"nodemon --exec babel-node server.js --ignore public/",
+    "build":"webpack -wd "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jstjyoti/fullStack-practice.git"
+  },
+  "keywords": [
+    "full-stack",
+    "learning",
+    "MERN"
+  ],
+  "author": "Jyoti Mishra",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jstjyoti/fullStack-practice/issues"
+  },
+  "homepage": "https://github.com/jstjyoti/fullStack-practice#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.5.5",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/node": "7.x",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.12.1",
+    "eslint-plugin-react": "^7.12.4",
+    "nodemon": "^1.18.9",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  }
+}
