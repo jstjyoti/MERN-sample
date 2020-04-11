@@ -9,6 +9,9 @@
 <body>
   <!-- is used in ejs for supporting html from server -->
   <!-- partial content can be rendered if we take out content and put in another ejs file and include that -->
-  <%- content %>
+  <div id="root">
+    <%= content %>  
+  </div>
+  <script src="../public/bundle.js"></script>
 </body>
 </html>

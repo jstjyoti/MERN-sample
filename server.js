@@ -11,7 +11,7 @@ const server = express();
 //route
 server.get('/', (req, res) => {
   res.render('index',{
-    content: 'ejs template!<h1>H1</h1>'
+    content: '...'
   });
   //handler similar to http server module
   // res.send('hello from server'); // to send string send method
