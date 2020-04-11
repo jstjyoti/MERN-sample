@@ -1,1 +1,1 @@
-export const config = {port: 8080};
+export default { port: 8080};
